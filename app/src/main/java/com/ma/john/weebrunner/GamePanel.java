@@ -138,14 +138,14 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback{
 
             difficultyDelay++;
 
-            if(spikeSpeed >= WIDTH/60){
+            if(spikeSpeed >= WIDTH/120){
 
                 difficultyDelay -= difficultyDelay;
 
             }
 
             //DEBUG this if statement is never called
-            if(spikeSpeed >= WIDTH/120){
+            if(spikeSpeed >= WIDTH/240){
 
                 n = 2;
 

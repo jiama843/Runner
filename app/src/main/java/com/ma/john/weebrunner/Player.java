@@ -90,9 +90,9 @@ public class Player extends GameObject_Character{
         // BUG NOTICE: INSPECT initialY > desiredY && y <= desiredY WITH RESPECT TO CHANGES IN desiredY caused in
         // setDesiredY.
 
-        if(initialY == desiredY || initialY > desiredY && y <= desiredY || initialY < desiredY && y >= desiredY) {
+        if(initialY == desiredY || initialY > desiredY && y <= desiredY || initialY < desiredY && y >= desiredY){
 
-            y = desiredY;
+            setY(desiredY);
             initialY = desiredY;
             canvas.drawBitmap(animate.getImage(), x, y, null);
 
