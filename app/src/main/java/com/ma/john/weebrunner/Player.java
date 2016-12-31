@@ -92,9 +92,9 @@ public class Player extends GameObject_Character{
 
         if(initialY == desiredY || initialY > desiredY && y <= desiredY || initialY < desiredY && y >= desiredY) {
 
-                initialY = desiredY;
-                canvas.drawBitmap(animate.getImage(), x, y, null);
-
+            y = desiredY;
+            initialY = desiredY;
+            canvas.drawBitmap(animate.getImage(), x, y, null);
 
         }else if(desiredY > initialY){
 
